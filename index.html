@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Domo On Sol</title>
+    <link rel="icon" type="image/png" href="/images/aaaaaw.png" />
+    <meta name="robots" content="max-image-preview:large" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      id="bodhi-svgs-attachment-css"
+      href="/medias/wp-content/plugins/svg-support/css/svgs-attachment8f99.css?ver=6.5"
+      media="all"
+    />
+    <link rel="https://api.w.org/" href="index52f0.json?rest_route=/" />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="/index2aaf.json?rest_route=/wp/v2/pages/12"
+    />
+    <link rel="canonical" href="index.html" />
+    <link rel="shortlink" href="index.html" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.cdnfonts.com/css/genty-demo" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-88936148-1"
+      type="51ed1d3b704306eb949b1e62-text/javascript"
+    ></script>
+    <script type="51ed1d3b704306eb949b1e62-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-88936148-1');
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-88936148-1"
+      type="51ed1d3b704306eb949b1e62-text/javascript"
+    ></script>
+    <script type="51ed1d3b704306eb949b1e62-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-88936148-1');
+    </script>
+
+    <style>
+      /* Tu CSS existente */
+
+      /* Nuevo CSS para el icono flotante de reproducción */
+      .floating-play-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #ff4081;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .floating-play-icon:hover {
+        background-color: #e91e63;
+      }
+
+      .floating-play-icon i {
+        font-size: 24px;
+      }
+    </style>
+
+    <style type="text/css">
+      @font-face {
+        font-family: "Genty";
+        src: url("/Template/medias/cf-fonts/s/genty/Genty.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/roboto/5.0.11/cyrillic/400/normal.html);
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/roboto/5.0.11/latin/400/normal.html);
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/roboto/5.0.11/latin-ext/400/normal.html);
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family:"Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/roboto/5.0.11/vietnamese/400/normal.html);
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/roboto/5.0.11/cyrillic-ext/400/normal.html);
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/roboto/5.0.11/greek/400/normal.html);
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/roboto/5.0.11/greek-ext/400/normal.html);
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family:"Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 500;
+        src: url(cf-fonts/s/roboto/5.0.11/cyrillic/500/normal.html);
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 500;
+        src: url(cf-fonts/s/roboto/5.0.11/cyrillic-ext/500/normal.html);
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family:"Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 500;
+        src: url(cf-fonts/s/roboto/5.0.11/latin/500/normal.html);
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 500;
+        src: url(cf-fonts/s/roboto/5.0.11/vietnamese/500/normal.html);
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309,
+          U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 500;
+        src: url(cf-fonts/s/roboto/5.0.11/greek/500/normal.html);
+        unicode-range: U+0370-03FF;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family:"Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 500;
+        src: url(cf-fonts/s/roboto/5.0.11/greek-ext/500/normal.html);
+        unicode-range: U+1F00-1FFF;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family:"Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 500;
+        src: url(cf-fonts/s/roboto/5.0.11/latin-ext/500/normal.html);
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/titan-one/5.0.18/latin/400/normal.html);
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+          U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        font-display: swap;
+        color: #fe0000;
+      }
+
+      @font-face {
+        font-family: "Bagel Fat One", system-ui;
+        font-style: normal;
+        font-weight: 400;
+        src: url(cf-fonts/s/titan-one/5.0.18/latin-ext/400/normal.html);
+        unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+          U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F,
+          U+A720-A7FF;
+        font-display: swap;
+        color: #fe0000;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/medias/wp-content/themes/work/assets/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../unpkg.com/aos%403.0.0-beta.6/dist/aos.css"
+    />
+  </head>
+
+  <body
+    class="home page-template page-template-landing-page page-template-landing-page-php page page-id-12"
+  >
+    <div
+      class="global-wrapper flex min-h-screen flex-col justify-between overflow-hidden"
+    >
+      <header
+        class="header fixed inset-x-0 top-0 z-120 py-sm transition-all duration-300 lg:py-sm"
+      >
+        <div class="container">
+          <div class="header__navbar flex w-full items-center justify-between">
+            <div class="header__logo z-110 flex items-center">
+              <a href="#" class="header__logo-link"
+                ><img
+                  src="/images/TEXT.png"
+                  class="w-[166px] lg:w-[200px]"
+                  alt="Logo"
+              /></a>
+            </div>
+            <div class="header__buttons flex items-center">
+              <a
+                href="https://jup.ag/swap/objcmbZNe3yo7oa7fd6tHVqKYjwVqQaMGur3HJQpump-SOL"
+                class="header__button button-cta-s"
+                >Buy $DOMO</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero relative py-lg md:py-[60px] lg:py-[60px]">
+          <div
+            class="hero__bg pointer-events-none absolute left-1/2 top-[-43%] z-0 -translate-x-[40%] select-none lg:top-[-30%]"
+          ></div>
+          <div class="container">
+            <div
+              class="hero__wrapper relative z-1 flex flex-col-reverse items-center justify-between lg:flex-row lg:items-end"
+            >
+              <div
+                class="hero__info mt-xxl text-center lg:mt-0 lg:max-w-[488px] lg:text-left"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
+                <h1
+                  class="hero__title heading-h2 md:heading-h1 lg:heading-hero"
+                >
+                  Welcome <br />
+                  to $DOMO
+                </h1>
+                <div class="hero__texts mt-md flex flex-col gap-md lg:mt-lg">
+                  <p class="hero__text">
+                    Official CTO of $DOMO MTO Account (Market Take Over).<br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+              <div
+                class="hero__image relative w-[80%] lg:w-full lg:max-w-[500px]"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <img src="/images/domo1.png" class="relative z-1" alt />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="tokenomics relative py-lg md:py-[60px] lg:py-[100px]"
+          id="tokenomics"
+        >
+          <div
+            class="tokenomics__bg pointer-events-none absolute left-1/2 top-[37%] z-0 hidden -translate-x-[50%] select-none lg:block"
+          ></div>
+          <div
+            class="tokenomics__heading relative z-1 mx-auto mb-xl max-w-[523px] text-center lg:mb-56px"
+          >
+            <h3 class="tokenomics__title heading-h3 lg:heading-h2">Domo-Kun</h3>
+            <p class="tokenomics__description mt-md">どーもくん</p>
+          </div>
+          <section class="gallery">
+            <div class="image-wrapper">
+              <img src="/images/aaa.png" alt="Image 1" />
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
+          </section>
+          <br /><br />
+
+          <style>
+            .bagel-fat-one-regular {
+              font-family: "Bagel Fat One", system-ui;
+              font-weight: 400;
+              font-style: normal;
+            }
+
+            /* styles.css */
+            .gallery {
+              display: grid;
+              margin: 0 auto;
+              overflow: hidden;
+              justify-items: center;
+            }
+
+            .section-heading {
+              text-align: center;
+              margin-bottom: 20px;
+            }
+
+            .image-wrapper {
+              width: calc(33.33% - 20px);
+              box-sizing: border-box;
+              padding: 10px;
+              float: left;
+              margin: 10px;
+              /* Añade un margen entre las imágenes */
+            }
+
+            .image-wrapper img {
+              width: 100%;
+              display: block;
+              max-width: 100%;
+            }
+
+            @media screen and (max-width: 600px) {
+              .image-wrapper {
+                width: calc(50% - 20px);
+              }
+            }
+
+            @media screen and (max-width: 400px) {
+              .image-wrapper {
+                width: calc(100% - 20px);
+              }
+            }
+          </style>
+
+          <div class="container">
+            <div
+              class="tokenomics__heading relative z-1 mx-auto mb-xl max-w-[523px] text-center lg:mb-56px"
+            >
+              <h3 class="tokenomics__title heading-h3 lg:heading-h2">
+                Tokenomics
+              </h3>
+              <p class="tokenomics__description mt-md">
+                An Overview of token distribution
+              </p>
+            </div>
+
+            <div
+              class="tokenomics__wrapper relative z-1 mx-auto flex max-w-[1000px] flex-col-reverse items-center gap-64px lg:flex-row lg:items-start lg:justify-between"
+            >
+              <div
+                class="tokenomics__info text-center lg:text-left"
+                data-aos="fade-up"
+                data-aos-delay="50"
+              >
+                <div
+                  class="tokenomics__items flex max-w-[285px] flex-col items-center gap-md lg:items-start"
+                >
+                  <div class="tokenomics__item">
+                    <p class="tokenomics__item-caption">Token Symbol:</p>
+                    <p class="tokenomics__item-title heading-h4">DOMO</p>
+                  </div>
+                  <div class="tokenomics__item">
+                    <p class="tokenomics__item-caption">Total Supply</p>
+                    <p class="tokenomics__item-title heading-h4">
+                      979,976,259.62
+                    </p>
+                  </div>
+                  <div class="tokenomics__item">
+                    <p class="tokenomics__item-caption">Tax</p>
+                    <p class="tokenomics__item-title heading-h4">0/0 Tax</p>
+                  </div>
+                </div>
+                <div
+                  class="tokenomics__buttons flex items-center justify-center gap-sm mt-xl lg:mt-64px lg:justify-start"
+                >
+                  <a
+                    href="https://dexscreener.com/solana/5e5bro5kgxj9wnmzp6rc1psdxcgrq3rfqqhxvmbkgyjx"
+                    class="button-cta-m pink"
+                    >Dexscreener</a
+                  >
+                  <a
+                    href="https://birdeye.so/token/objcmbZNe3yo7oa7fd6tHVqKYjwVqQaMGur3HJQpump?chain=solana"
+                    class="button-cta-m pink"
+                    >Birdeye</a
+                  >
+                </div>
+              </div>
+              <div
+                class="tokenomics__image relative w-[70%] lg:w-full lg:max-w-[470px]"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <img
+                  src="/images/photo_4972402686938951199_x.jpg"
+                  class="relative z-1"
+                  alt
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+          .floating-image {
+            position: fixed;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            animation: shake 0.5s infinite;
+          }
+
+          @keyframes shake {
+            0% {
+              transform: translate(-50px, -50%) rotate(0deg);
+            }
+
+            25% {
+              transform: translate(-55px, -50%) rotate(-5deg);
+            }
+
+            50% {
+              transform: translate(-50px, -50%) rotate(0deg);
+            }
+
+            75% {
+              transform: translate(-45px, -50%) rotate(5deg);
+            }
+
+            100% {
+              transform: translate(-50px, -50%) rotate(0deg);
+            }
+          }
+        </style>
+
+        <!-- <body oncontextmenu="return false" onkeydown="return false"> -->
+
+        <!-- <section class="community relative py-lg md:py-[60px] lg:py-[100px]" id="community">
+        <div class="container">
+          <div class="community__heading mx-auto mb-xl max-w-[640px] text-center lg:mb-56px">
+            <h3 class="community__title heading-h3 lg:heading-h2"> Radio</h3>
+          </div>
+          <div class="hero__texts mt-md flex flex-col gap-md lg:mt-lg">
+            <p class="tokenomics__description mt-md">An Overview of token distribution, and economic policies ensuring
+              token's sustainable growth. </p>
+          </div>
+      </section> -->
+
+        <!-- <div class="tokenomics__heading relative z-1 mx-auto mb-xl max-w-[523px] text-center lg:mb-56px">
+        <h3 class="tokenomics__title heading-h3 lg:heading-h2">Gallery</h3>
+        <p class="tokenomics__description mt-md"> $? </p>
+      </div>
+      <section class="gallery">
+        <div class="image-wrapper">
+          <img src="/Images/385.jpg" alt="Image 1">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Images/385.jpg" alt="Image 2">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Images/385.jpg" alt="Image 3">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Images/385.jpg" alt="Image 3">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Images/385.jpg" alt="Image 1">
+        </div>
+        <div class="image-wrapper">
+          <img src="/Images/385.jpg" alt="Image 3">
+        </div>
+      </section>
+      
+      <style>
+      
+        .gallery {
+          max-width: 900px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+      
+        .section-heading {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+      
+        .image-wrapper {
+          width: calc(33.33% - 20px);
+          box-sizing: border-box;
+          padding: 10px;
+          float: left;
+          margin: 10px;
+          /* Añade un margen entre las imágenes */
+        }
+      
+      
+        .image-wrapper img {
+          width: 100%;
+          display: block;
+          max-width: 100%;
+        }
+      
+        .image-wrapper {
+          background-color: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+      
+        @media screen and (max-width: 600px) {
+          .image-wrapper {
+            width: calc(50% - 20px);
+          }
+        }
+      
+        @media screen and (max-width: 400px) {
+          .image-wrapper {
+            width: calc(100% - 20px);
+          }
+        }
+      </style> -->
+
+        <section
+          class="community relative py-lg md:py-[60px] lg:py-[100px]"
+          id="community"
+        >
+          <div class="container">
+            <div
+              class="community__heading mx-auto mb-xl max-w-[640px] text-center lg:mb-56px"
+            >
+              <h3 class="community__title heading-h3 lg:heading-h2">
+                Join Our Community
+              </h3>
+            </div>
+            <div
+              class="community__social flex items-center justify-center gap-md lg:gap-xxl"
+            >
+              <a
+                href="https://x.com/domo_ct0?s=21&t=rZowCN0sytVC1ikXPFiRqQ"
+                target="_blank"
+                class="community__social-link social-shadow flex h-[82px] w-[82px] items-center justify-center rounded-full border-[2px] border-black bg-yellow transition-all hover:translate-y-[3px] hover:bg-pink hover:shadow-none lg:h-[134px] lg:w-[134px] lg:border-[3px]"
+              >
+                <img
+                  src="/images/pngwing.com (1).png"
+                  class="w-[40%]"
+                  alt="Twitter Button"
+                />
+              </a>
+              <a
+                href="https://t.me/domoportal699"
+                target="_blank"
+                class="community__social-link social-shadow flex h-[82px] w-[82px] items-center justify-center rounded-full border-[2px] border-black bg-yellow transition-all hover:translate-y-[3px] hover:bg-pink hover:shadow-none lg:h-[134px] lg:w-[134px] lg:border-[3px]"
+              >
+                <img
+                  src="/images/pngwing.com.png"
+                  class="w-[40%]"
+                  alt="Telegram Button"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="/medias/wp-content/themes/work/js/navigation8a54.js?ver=1.0.0"
+      type="51ed1d3b704306eb949b1e62-text/javascript"
+    ></script>
+    <script
+      src="/medias/wp-content/themes/work/assets/js/scripts.js"
+      type="51ed1d3b704306eb949b1e62-text/javascript"
+    ></script>
+    <script
+      src="../unpkg.com/aos%403.0.0-beta.6/dist/aos.js"
+      type="51ed1d3b704306eb949b1e62-text/javascript"
+    ></script>
+    <script type="51ed1d3b704306eb949b1e62-text/javascript">
+      AOS.init({
+        offset: 120, // offset (in px) from the original trigger point
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+    <script
+      src="/medias/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="51ed1d3b704306eb949b1e62-|49"
+      defer
+    ></script>
+  </body>
+</html>
