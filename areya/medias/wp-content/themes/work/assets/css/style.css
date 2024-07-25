@@ -299,12 +299,14 @@ section {
 }
 
 section:first-child {
-    padding-top: 160px
+    padding-top: 160px;
+    min-height: 90vh;
 }
 
 @media(min-width:768px) {
     section:first-child {
-        padding-top: 200px
+        padding-top: 200px;
+        min-height: 90vh;
     }
 }
 
